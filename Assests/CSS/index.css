@@ -1,9 +1,27 @@
+.peerlink {
+  position: relative;
+  background-color: #f8f5f4;
+  width: 100%;
+  text-align: center;
+  /* Center the content horizontally */
+  font-size: var(--font-size-11xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+
+/* Adjust the width to fit the screen and center content */
+.peerlink .rectangle-parent {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
 .group-child {
   position: absolute;
   top: 0;
   left: 0;
   background-color: var(--color-darkslateblue);
-  width: 1440px;
+  width: 2000px;
   height: 148px;
 }
 
@@ -44,7 +62,7 @@
   position: absolute;
   top: 61px;
   left: 669px;
-  width: 388px;
+  width: 1300px;
   height: 36px;
 }
 
@@ -133,7 +151,7 @@
   position: absolute;
   top: 933px;
   left: 45px;
-  width: 1205px;
+  width: 1805px;
   height: 210px;
   font-size: var(--font-size-41xl);
   color: var(--color-darkslateblue);

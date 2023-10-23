@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="./Assests/CSS/index.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria Sans:wght@700&display=swap" />
+  <style>
+
+  </style>
 </head>
 
 <body>
@@ -28,14 +31,15 @@
     <img class="image-2-icon" alt="" src="./public/image-2@2x.png" />
 
     <img class="peerlink-item" alt="" src="./public/group-7.svg" />
-
-    <div class="want-your-peers-to-engage-with-parent">
-      <b class="want-your-peers">Want your peers to engage with each other?</b>
-      <div class="rectangle-group">
-        <div class="group-item"></div>
-        <div class="get-started">Get Started</div>
+    <section>
+      <div class="want-your-peers-to-engage-with-parent">
+        <b class="want-your-peers">Want your peers to engage with each other?</b>
+        <div class="rectangle-group">
+          <div class="group-item"></div>
+          <div class="get-started">Get Started</div>
+        </div>
       </div>
-    </div>
+    </section>
     <div class="peerlink-inner"></div>
     <div class="features-parent">
       <b class="features">Features:</b>
@@ -48,7 +52,7 @@
           </b>
         </div>
         <div class="group-div">
-          <div class="group-inner"></div>
+          <div class "group-inner"></div> <!-- Fix the typo here -->
           <b class="get-alert-for">Get Alert for harmful communication</b>
         </div>
         <div class="rectangle-parent1">
@@ -62,32 +66,30 @@
       </div>
     </div>
     <div class="group-container">
-      <div class="rectangle-parent3">
-        <div class="group-child3"></div>
-        <b class="eg-zoya-memon">e.g Zoya Memon</b>
-        <b class="full-name">Full Name</b>
-      </div>
-      <div class="rectangle-parent4">
-        <div class="group-child3"></div>
-        <b class="eg-zoyamemon767gmailcom">e.g zoyamemon767@gmail.com</b>
-        <b class="full-name">Email</b>
-      </div>
-      <div class="rectangle-parent5">
-        <div class="group-child3"></div>
-        <b class="eg-zoyamemon767gmailcom">+9293919919991</b>
-        <b class="full-name">Contact Number</b>
-      </div>
-      <div class="rectangle-parent6">
-        <div class="group-child3"></div>
-        <b class="eg-requesting-for">e.g Requesting for demo</b>
-        <b class="full-name">Comment</b>
-      </div>
-      <b class="contact-now">Contact Now</b>
+      <div class="form-title">Contact Now</div>
+      <form action="submit.php" method="post">
+        <div class="form-group">
+          <label for="full-name">Full Name:</label>
+          <input type="text" id="full-name" name="full-name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-number">Contact Number:</label>
+          <input type="text" id="contact-number" name="contact-number" required>
+        </div>
+        <div class="form-group">
+          <label for="comment">Comment:</label>
+          <textarea id="comment" name="comment" required></textarea>
+        </div>
+        <button type="submit" class="submit-request">Submit Request</button>
+      </form>
     </div>
-    <div class="rectangle-parent7">
-      <div class="peerlink-child1"></div>
-      <b class="all-rights-are">All rights are reserved by @SukkurIBAUniversity 2023</b>
-    </div>
+    <div class="peerlink-child1"></div>
+    <b class="all-rights-are">All rights are reserved by @SukkurIBAUniversity 2023</b>
+  </div>
 </body>
 
 </html>
