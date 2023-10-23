@@ -70,19 +70,19 @@
       <form action="submit.php" method="post">
         <div class="form-group">
           <label for="full-name">Full Name:</label>
-          <input type="text" id="full-name" name="full-name" required>
+          <input type="text" id="full-name" placeholder="enter full name" name="full-name" required>
         </div>
         <div class="form-group">
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" placeholder="enter email" name="email" required>
         </div>
         <div class="form-group">
           <label for="contact-number">Contact Number:</label>
-          <input type="text" id="contact-number" name="contact-number" required>
+          <input type="text" id="contact-number" placeholder="enter contact number" name="contact-number" required>
         </div>
         <div class="form-group">
           <label for="comment">Comment:</label>
-          <textarea id="comment" name="comment" required></textarea>
+          <textarea id="comment" name="comment" placeholder="enter comment" required></textarea>
         </div>
         <button type="submit" class="submit-request">Submit Request</button>
       </form>
@@ -90,6 +90,26 @@
     <div class="peerlink-child1"></div>
     <b class="all-rights-are">All rights are reserved by @SukkurIBAUniversity 2023</b>
   </div>
+  <script>
+    // Add an event listener to the form
+    const form = document.getElementById("myForm");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent the default form submission behavior
+
+      // Access form values
+      const fullName = document.getElementById("full-name").value;
+      const email = document.getElementById("email").value;
+      const contactNumber = document.getElementById("contact-number").value;
+      const comment = document.getElementById("comment").value;
+
+      // You can perform further actions here, such as sending the data to a server or displaying it on the page
+      console.log("Full Name: " + fullName);
+      console.log("Email: " + email);
+      console.log("Contact Number: " + contactNumber);
+      console.log("Comment: " + comment);
+    });
+  </script>
 </body>
 
 </html>
